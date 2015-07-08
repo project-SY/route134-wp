@@ -1,0 +1,426 @@
+@charset "UTF-8";
+
+/* ------------------------------------
+◆　all
+------------------------------------ */
+html, body {
+  color: #333;
+  background-color: #fff;
+  font-family: 'Georgia',"ヒラギノ角ゴ Pro W3","HiraKakuPro-W3", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", sans-serif;
+  /* 明朝
+  font-family:"ヒラギノ明朝 Pro W6", "Hiragino Mincho Pro", "HGS明朝E", "ＭＳ Ｐ明朝", serif;
+  */
+  font-size: 13px;
+  line-height: 1.2em;
+  width: 100%;
+  min-width: 1000px;
+  height: auto;
+}
+
+a {
+  display: block;
+  color: #333;
+  text-decoration: none;
+  font-family: 'Georgia'
+}
+
+a:hover {
+  text-decoration: none;
+  cursor: pointer;
+  filter: alpha(opacity=80);
+  opacity: 0.8;
+}
+
+li {
+  list-style-type: none;
+}
+
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+.hover:hover{
+  cursor: pointer;
+  filter: alpha(opacity=80);
+  opacity: 0.8;
+}
+
+.left {float: left;}
+.right {float: right;}
+
+.content-width {
+  width: 1000px;
+  margin: 0px auto;
+}
+
+#body {
+  width: 100%;
+  border-top: solid 2px #74c4e4;
+}
+
+#wrapper {
+  width: 100%;
+  margin: 0px auto;
+}
+
+#container {
+  width: 100%;
+  background-color: #fcfcfc;
+  border-bottom: solid 1px #65acdf;
+  padding: 50px 0px 55px;
+}
+
+.content-column {
+  float: left;
+  width: 725px;
+  background-color: #fff;
+  box-sizing: content-box;
+  padding: 10px;
+  box-shadow: 0px 1px 5px 0px rgba(234, 234, 234, 0.75);
+}
+
+.sidebar-column {
+  float: right;
+  width: 245px;
+}
+
+.sidebar-column-block {
+  width: 225px;
+  padding: 10px;
+  box-shadow: 0px 1px 5px 0px rgba(234, 234, 234, 0.75);
+  background-color: #fff;
+  margin-bottom: 10px;
+}
+
+.left {float: left;}
+.right {float: right;}
+
+.inner {
+  padding: 40px 0px;
+}
+
+.inner h4 {
+  font-family: YuGo;
+  color:  #666666;
+  font-size: 12px; /* フォント置換による類似 */
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+
+/* ------------------------------------
+◆　header
+------------------------------------ */
+#header {
+  width: 100%;
+  margin: 40px 0px 30px;
+  position: relative;
+  padding-bottom: 30px;
+  border-bottom: solid 1px #65acdf;
+}
+
+#header .header-inner {
+  width: 1000px;
+  margin: 0px auto;
+  position: relative;
+}
+
+#header div .header-logo {
+  margin: 0px auto;
+  width: 151px;
+  height: 61px;
+}
+
+#social-nav {
+  position: absolute;
+  top: 15px;
+  right: 0px;
+}
+
+#social-nav li {
+  float: left;
+  margin-right: 16px;
+}
+
+#social-nav li:last-child {
+  margin-right: 0px;
+}
+
+#nav {
+  padding: 0px 20px;
+  border-bottom: solid 1px #eeeeee;
+}
+
+#nav li {
+  float: left;
+  font-size: 13px;
+}
+
+#nav li a {
+  width: 160px;
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+#nav li a:hover {
+  border-bottom: solid 3px #65acdf;
+  cursor: pointer;
+  filter: alpha(opacity=80);
+  opacity: 0.8;
+  padding-bottom: 12px !important;
+}
+
+#nav li:last-child {
+  margin-right: 0px;
+}
+
+
+/* ------------------------------------
+◆　index
+------------------------------------ */
+.headline {padding: 0px 0px 50px}
+.headline .headline-new-post {width: 360px; padding-bottom: 3px;}
+
+.headline .headline-new-post .headline-thumbnail {
+  width: 360px;
+  height: 180px;
+  margin-bottom: 10px;
+}
+
+.headline .content-column h4 {
+  font-family: YuGo;
+  color: #666666;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+.headline .content-column p {
+  font-family: YuGo;
+  color: #999999;
+  font-size: 9.01px;
+  font-weight: 500;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+
+.instragram-area {
+  background-color: #f7f4ef;
+}
+
+.instragram-area ul {
+  margin-bottom: 45px;
+  height: 500px;
+}
+
+.instragram-area ul li {
+  width: 240px;
+  height: 240px;
+  border-radius: 4px;
+  background-color:  #ffffff;
+  float: left;
+  margin: 10px 10px 0px 0px;
+}
+
+.instragram-area ul li a {
+  width: 220px;
+  height: 220px;
+  padding: 10px;
+}
+
+.instragram-area .instragram-area-info {
+  text-align: center;
+}
+
+.instragram-area .instragram-area-info a {
+  display: inline;
+  text-decoration: underline;
+}
+
+.instragram-area .instragram-area-info a i {
+  padding-right: 5px;
+}
+
+.index-new-posts {
+  background-color: #fcfcfc;
+}
+
+.index-new-posts ul li {
+  width: 240px;
+  height: 240px;
+  border-radius: 4px;
+  background-color:  #ffffff;
+  float: left;
+  margin: 10px 10px 0px 0px;
+  box-shadow: 0px 1px 5px 0px rgba(234, 234, 234, 0.75);
+}
+
+.index-new-posts ul li a {
+  width: 220px;
+  height: 220px;
+  padding: 10px;
+}
+
+.index-new-posts ul li a .index-thumbnail {
+  width: 220px;
+  height: 110px;
+  margin-bottom: 15px;
+}
+
+.index-new-posts ul li a h5 {
+  font-family: YuGo;
+  color:  #666666;
+  font-size: 12px;
+  font-weight: 500;
+  text-align: left;
+  letter-spacing: 0.1em;
+  margin-bottom: 10px;
+}
+
+.index-new-posts ul li a p {
+  font-family: YuGo;
+  color:  #999999;
+  font-size: 9px;
+  font-weight: 500;
+  text-align: left;
+  letter-spacing: 0.1em;
+  margin-bottom: 10px;
+}
+
+.index-new-posts ul li a .category-author h6 {
+  float: left;
+  padding-left: 10px;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+
+
+
+
+
+/*--------------------------------------
+    category group
+---------------------------------------*/
+.category-type {
+  height: 15px;
+  padding: 5px 0px;
+  border-radius: 2px;
+  float: left;
+}
+
+.category-type h6 {
+  font-size: 10px;
+  color: #ffffff;
+  font-weight: normal;
+  text-align: center;
+}
+
+.category-author {
+  float: left;
+  padding: 5px 0px 5px 10px;
+}
+
+.category-author img {float: left;}
+.category-author h5 {
+  float: left;
+  padding-left: 10px;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+
+.lifestyle {
+  width: 90px;
+  background-color: #f9cfb2;
+}
+
+
+/* ------------------------------------
+◆　sidebar
+------------------------------------ */
+#weather-area time {
+  font-family: YuGo;
+  color:  #6cafe0;
+  font-size: 14px;
+  line-height: 19px;
+  border-right: solid 1px #eeeeee;
+  display: inline-block;
+  padding-right: 10px;
+}
+
+#pick-up-content a img {
+  width: 100%;
+}
+
+#sidebar-new-posts {
+  margin-top: 20px;
+}
+
+#sidebar-new-posts h4 {
+  font-family: YuGo;
+  color:  #666666;
+  font-size: 12px;
+  text-align: left;
+  margin-bottom: 10px;
+  border-left: solid 3px #65acdf;
+  padding-left: 15px;
+}
+
+
+
+/* ------------------------------------
+◆　footer
+------------------------------------ */
+#footer {
+  box-sizing: content-box;
+  padding: 40px 0px 90px;
+}
+
+#footer .footer-info-area {
+  float: left;
+  margin-right: 40px;
+}
+
+#footer .footer-info-area:last-child {
+  margin-right: 0px;
+}
+
+#footer .footer-info-area b {
+  display: block;
+  margin-bottom: 3px;
+}
+
+#footer .footer-info-area li a {
+  font-family: FontAwesome;
+  color:  #65acdf;
+  font-size: 9px; /* フォント置換による類似 */
+  font-weight: 400;
+  text-align: left;
+  line-height: 1.9em;
+}
+
+#footer .footer-info-area span {
+  font-size: 10px;
+  padding-right: 3px;
+}
+
+#footer p {
+  font-family: YuGo;
+  color:  #cccccc;
+  font-size: 9px; /* フォント置換による類似 */
+  font-weight: 500;
+  line-height: 21.8px; /* フォント置換による類似 */
+  text-align: center;
+}
+
+

@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+/* ------------------------------------
+◆　all
+------------------------------------ */
+html, body {
+  color: #333;
+  background-color: #fff;
+  font-family: "ヒラギノ角ゴ Pro W3","HiraKakuPro-W3", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", sans-serif;
+  font-size: 13px;
+  line-height: 1.7em;
+  width: 100%;
+  height: auto;
+	position: relative;
+	-webkit-text-size-adjust: 100%;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+img {
+	display: block;
+}
+
