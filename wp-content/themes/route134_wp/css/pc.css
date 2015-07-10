@@ -276,16 +276,6 @@ li {
   margin-bottom: 15px;
 }
 
-.index-new-posts ul li a h5 {
-  font-family: YuGo;
-  color:  #666666;
-  font-size: 12px;
-  font-weight: 500;
-  text-align: left;
-  letter-spacing: 0.1em;
-  margin-bottom: 10px;
-}
-
 .index-new-posts ul li a p {
   font-family: YuGo;
   color:  #999999;
@@ -295,18 +285,6 @@ li {
   letter-spacing: 0.1em;
   margin-bottom: 10px;
 }
-
-.index-new-posts ul li a .category-author h6 {
-  float: left;
-  padding-left: 10px;
-  font-size: 12px;
-  font-weight: normal;
-}
-
-
-
-
-
 
 /*--------------------------------------
     category group
@@ -324,20 +302,6 @@ li {
   font-weight: normal;
   text-align: center;
 }
-
-.category-author {
-  float: left;
-  padding: 5px 0px 5px 10px;
-}
-
-.category-author img {float: left;}
-.category-author h5 {
-  float: left;
-  padding-left: 10px;
-  font-size: 12px;
-  font-weight: normal;
-}
-
 
 .lifestyle {
   width: 90px;

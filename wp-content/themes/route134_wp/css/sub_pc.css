@@ -21,14 +21,52 @@
 
 .category {
 	display:inline-block;
-	width: 100px;
 	margin-right:10px;
-	padding:7px 0px;
+	padding:7px;
 	text-align:center;
 	font-size:10px;
 	border-radius: 2px;
-	background-color:  #f9cfb2;
 	color:#FFF;
+}
+
+.category-beach {
+	background-color: #4297dc;
+}
+
+.category-gourmet {
+	background-color: #f29799;
+}
+
+.category-amusement {
+	background-color: #f9cfb2;
+}
+
+.category-fashion {
+	background-color: #62acb7;
+}
+
+.category-town {
+	background-color: #eeb373;
+}
+
+.category-area {
+	background-color: #65acdf;
+}
+
+.category-info span,
+.category-info img,
+.category-info .auther {
+	display:inline-block;
+	vertical-align:middle;
+}
+
+.category-info img {
+	margin-right: 5px;
+}
+
+.auther {
+	font-size:9px;
+	font-family: Avenir;
 }
 
 h3 {
@@ -37,7 +75,7 @@ h3 {
 	border-bottom: 2px solid #65acdf;
 	font-family: YuGo;
 	color:  #666666;
-	font-size: 18px; 
+	font-size: 18px;
 	font-weight: 500;
 }
 
@@ -54,7 +92,8 @@ h3 {
 }
 
 .index-new-posts .wp-post-image {
-	width:100%;
+	width: 220px;
+	height: 110px;
 }
 
 .index-new-posts h5:after,
@@ -63,6 +102,10 @@ h3 {
 	content: '...';
 }
 
+.index-new-posts .wp-post-image,
+.index-new-posts h5 {
+	margin-bottom:5px;
+}
 
 /* ------------------------------------
 ◆　about
@@ -309,10 +352,6 @@ input[type="submit"] {
 	letter-spacing:0.08em;
 	line-height:2em;
 }
-
-
-
-
 
 /* ------------------------------------
 ◆　single

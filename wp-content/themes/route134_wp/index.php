@@ -13,13 +13,15 @@
 				<?php nskw_subtitle(); ?>
 			</p>
 			<div class="category-info">
-				<div class="category-type lifestyle">
-					<h6>グルメ</h6>
-				</div>
-				<div class="category-author">
-					<img src="./images/icon-index-author-thumbnail.png" height="15" width="15" alt="">
-					<h5>Ken Sayama</h5>
-				</div>
+				<?php
+					$category = get_the_category();
+					$cat_id   = $category[0]->cat_ID;
+					$cat_name = $category[0]->cat_name;
+					$cat_slug = $category[0]->category_nicename;
+				?>
+				<span class="category category-<?php echo $cat_slug; ?>"><?php echo $cat_name ?></span>
+				<img src="<?php bloginfo('template_url'); ?>/images/icon-index-author-thumbnail.png" height="15" width="15" alt="">
+				<h5 class="auther">Ken Sayama</h5>
 			</div>
 		</a>
 	<?php endwhile; else : ?>
@@ -76,6 +78,7 @@
 	<div class="inner content-width clearfix">
 		<h4>最新の記事</h4>
 		<ul>
+			<?php query_posts('&posts_per_page=8'); ?>
 			<?php if (have_posts()) : ?>
 			<?php while (have_posts()) : the_post(); ?>
 				<li>
@@ -84,13 +87,15 @@
 						<h5><?php echo mb_substr(get_the_title(), 0, 33); ?></h5>
 						<p class="sub_title"><?php mb_substr_nskw_subtitle(35); ?></p>
 						<div class="category-info clearfix">
-							<div class="category-type lifestyle">
-								<h6>ライフスタイル</h6>
-							</div>
-							<div class="category-author">
-								<img src="<?php bloginfo('template_url'); ?>/images/icon-index-author-thumbnail.png" height="15" width="15" alt="">
-								<h6>Ken Sayama</h6>
-							</div>
+							<?php
+								$category = get_the_category();
+								$cat_id   = $category[0]->cat_ID;
+								$cat_name = $category[0]->cat_name;
+								$cat_slug = $category[0]->category_nicename;
+							?>
+							<span class="category category-<?php echo $cat_slug; ?>"><?php echo $cat_name ?></span>
+							<img src="<?php bloginfo('template_url'); ?>/images/icon-index-author-thumbnail.png" height="15" width="15" alt="">
+							<h6 class="auther">Ken Sayama</h6>
 						</div>
 					</a>
 				</li>
@@ -103,5 +108,4 @@
 		</ul>
 	</div>
 </div>
-
 <?php include('footer.php'); ?>
