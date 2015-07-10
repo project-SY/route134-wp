@@ -14,7 +14,7 @@
 			</p>
 			<div class="category-info">
 				<div class="category-type lifestyle">
-					<h6>ライフスタイル</h6>
+					<h6>グルメ</h6>
 				</div>
 				<div class="category-author">
 					<img src="./images/icon-index-author-thumbnail.png" height="15" width="15" alt="">
