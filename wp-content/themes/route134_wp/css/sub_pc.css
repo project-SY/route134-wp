@@ -12,8 +12,8 @@
 
 #pankuzu {
 	padding:10px 0;
-	font-family: YuGo;
-	color:  #666666;
+	font-family: 'Verdana', YuGothic, '游ゴシック', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, sans-serif;
+	color: #666666;
 	font-weight: 500;
 	text-align: left;
 	margin-bottom: 20px;
