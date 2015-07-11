@@ -2,34 +2,33 @@
 <div class="headline content-width clearfix">
 	<!-- content-column-->
 	<div class="content-column">
-	<?php if (have_posts()) : ?>
-	<?php while (have_posts()) : the_post(); ?>
-		<a href="<?php the_permalink(); ?>" class="headline-new-post left">
-			<img class="headline-thumbnail" src="<?php bloginfo('template_url'); ?>/images/pic-headline-thumbnail-01.png" height="180" width="360" alt="">
-			<h4>
-				<?php the_title(); ?>
-			</h4>
-			<p>
-				<?php nskw_subtitle(); ?>
-			</p>
-			<div class="category-info">
-				<?php
-					$category = get_the_category();
-					$cat_id   = $category[0]->cat_ID;
-					$cat_name = $category[0]->cat_name;
-					$cat_slug = $category[0]->category_nicename;
-				?>
-				<span class="category category-<?php echo $cat_slug; ?>"><?php echo $cat_name ?></span>
-				<img src="<?php bloginfo('template_url'); ?>/images/icon-index-author-thumbnail.png" height="15" width="15" alt="">
-				<h5 class="auther">Ken Sayama</h5>
-			</div>
-		</a>
-	<?php endwhile; else : ?>
-		<div class="post">
-			<h2>記事はありません</h2>
-			<p>お探しの記事は見つかりませんでした。</p>
+		<div class="content-column-block clearfix">
+			<?php if (have_posts()) : ?>
+			<?php while (have_posts()) : the_post(); ?>
+				<a href="<?php the_permalink(); ?>" class="headline-new-post left">
+					<img class="headline-thumbnail" src="<?php bloginfo('template_url'); ?>/images/pic-headline-thumbnail-01.png" height="180" width="360" alt="">
+					<h4>
+						<?php the_title(); ?>
+					</h4>
+					<p>
+						<?php nskw_subtitle(); ?>
+					</p>
+					<div class="category-info">
+						<?php
+							$category = get_the_category();
+							$cat_id   = $category[0]->cat_ID;
+							$cat_name = $category[0]->cat_name;
+							$cat_slug = $category[0]->category_nicename;
+						?>
+						<span class="category category-<?php echo $cat_slug; ?>"><?php echo $cat_name ?></span>
+						<img src="<?php bloginfo('template_url'); ?>/images/icon-index-author-thumbnail.png" height="15" width="15" alt="">
+						<h5 class="auther">Ken Sayama</h5>
+					</div>
+				</a>
+			<?php endwhile; else : ?>
+			<?php endif; ?>
 		</div>
-	<?php endif; ?>
+		<!-- content-column-block end-->
 	</div>
 	<!-- content-column end-->
 	<!--sidebar-column-->
@@ -84,7 +83,7 @@
 				<li>
 					<a href="<?php the_permalink(); ?>">
 						<?php the_post_thumbnail('medium'); ?>
-						<h5><?php echo mb_substr(get_the_title(), 0, 33); ?></h5>
+						<h5 class="post-title"><?php echo mb_substr(get_the_title(), 0, 33); ?></h5>
 						<p class="sub_title"><?php mb_substr_nskw_subtitle(35); ?></p>
 						<div class="category-info clearfix">
 							<?php
