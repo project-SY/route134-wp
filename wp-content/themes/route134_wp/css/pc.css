@@ -7,7 +7,6 @@ html, body {
   color: #333;
   background-color: #fff;
   font-family: 'Verdana', YuGothic, '游ゴシック', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, sans-serif;
-  
   /* 明朝
   font-family:"ヒラギノ明朝 Pro W6", "Hiragino Mincho Pro", "HGS明朝E", "ＭＳ Ｐ明朝", serif;
   */
@@ -79,11 +78,7 @@ li {
 
 .content-column {
   float: left;
-  width: 725px;
-  background-color: #fff;
-  box-sizing: content-box;
-  padding: 10px;
-  box-shadow: 0px 1px 5px 0px rgba(234, 234, 234, 0.75);
+  width: 745px;
 }
 
 .sidebar-column {
