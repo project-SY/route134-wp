@@ -9,7 +9,7 @@
 		<div id="header" class="clearfix">
 			<div class="header-inner">
 				<div>
-					<a class="header-logo" href="index.php"><img src="<?php bloginfo('template_url'); ?>/images/logo-route134.png" alt="route134"></a>
+					<a class="header-logo" href="<?php echo home_url(); ?>"><img src="<?php bloginfo('template_url'); ?>/images/logo-route134.png" alt="route134"></a>
 				</div>
 				<ul id="social-nav">
 					<li><a href="https://twitter.com/R134_Official" target="_blank"><img src="<?php bloginfo('template_url'); ?>/images/icon-header-twitter.png" alt="twitter"></a></li>
@@ -20,12 +20,12 @@
 		</div>
 		<div id="nav">
 			<ul class="clearfix content-width">
-				<li><a href="">ファッション</a></li>
-				<li><a href="">ショッピング</a></li>
-				<li><a href="">グルメ</a></li>
-				<li><a href="">ライフスタイル</a></li>
-				<li><a href="">ヘルス&ビューティー</a></li>
-				<li><a href="">エリア</a></li>
+				<li><a href="category-beach">ビーチ</a></li>
+				<li><a href="category-town">タウン</a></li>
+				<li><a href="category-amusement">アミューズメント</a></li>
+				<li><a href="category-gourmet">グルメ</a></li>
+				<li><a href="category-fashion">ファッション</a></li>
+				<li><a href="category-area">エリア</a></li>
 			</ul>
 		</div>
 		<div id="container">
