@@ -349,8 +349,8 @@ input[type="submit"] {
 ◆　curator
 ------------------------------------ */
 
-#curator .curator-headline-info {
-	
+#curator .content-column-block {
+	margin-bottom: 40px
 }
 
 #curator .curator-headline-info img {
@@ -370,6 +370,57 @@ input[type="submit"] {
 	color:  #666666;
 	letter-spacing:0.08em;
 	line-height:2em;
+}
+
+#curator .post-list a {
+	float:left;
+	width:215px;
+	padding:10px;
+	margin:0 20px 10px 0;
+	box-shadow: 0px 1px 5px 0px rgba(234, 234, 234, 0.75);
+}
+
+#curator .post-list a:nth-child(3),
+#curator .post-list a:nth-child(6),
+#curator .post-list a:nth-child(9) {
+	margin-right: 0;
+}
+
+#curator .wp-post-image {
+	width: 215px;
+	height: 110px;
+}
+
+#curator .post-thumbnail {
+	width:100%;
+	margin-bottom:10px;
+}
+
+#curator .post-list h5 {
+	margin-bottom:10px;
+	color: #666666;
+	-webkit-text-wrap:none;
+}
+
+#curator .post-list p {
+	font-size:9px;
+	margin-bottom:10px;
+}
+
+#curator .post-list .bottom {
+	margin-bottom:0;
+}
+
+#curator .category {
+	margin-right:5px;
+}
+
+#curator .avatar {
+	display:inline-block;
+	vertical-align:middle;
+	width:20px;
+	height:20px;
+	margin-right:5px;
 }
 
 /* ------------------------------------
