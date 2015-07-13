@@ -12,9 +12,9 @@ Template Name:curator-kazuma
 						ぱんくずリストが入ります。
 					</div>
 					<div class="curator-headline-info clearfix">
-						<img src="<?php bloginfo('template_url'); ?>/images/pic-curator-thumbnail-ken.png">
+						<img src="<?php bloginfo('template_url'); ?>/images/pic-curators-thumbnail-kazuma.png">
 						<div class="right">
-							<h2>Ken Sayama</h2>
+							<h2>Kazuma Ueda</h2>
 							<p>
 								キュレーターのトップページの説明を行います。キュレーターのトップページの説明を行います。キュレーターのトップページの説明を行います。キュレーターのトップページの説明を行います。キュレーターのトップページの説明を行います。キュレーターのトップページの説明
 							</p>
