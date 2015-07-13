@@ -21,8 +21,8 @@
 							$cat_slug = $category[0]->category_nicename;
 						?>
 						<span class="category category-<?php echo $cat_slug; ?>"><?php echo $cat_name ?></span>
-						<img src="<?php bloginfo('template_url'); ?>/images/icon-index-author-thumbnail.png" height="15" width="15" alt="">
-						<h5 class="auther">Ken Sayama</h5>
+						<?php echo get_avatar(get_the_author_id(), 15); ?>
+						<h5 class="auther"><?php echo the_author_nickname(); ?></h5>
 					</div>
 				</a>
 			<?php endwhile; else : ?>
@@ -93,8 +93,8 @@
 								$cat_slug = $category[0]->category_nicename;
 							?>
 							<span class="category category-<?php echo $cat_slug; ?>"><?php echo $cat_name ?></span>
-							<img src="<?php bloginfo('template_url'); ?>/images/icon-index-author-thumbnail.png" height="15" width="15" alt="">
-							<h6 class="auther">Ken Sayama</h6>
+							<?php echo get_avatar(get_the_author_id(), 15); ?>
+							<h6 class="auther"><?php echo the_author_nickname(); ?></h6>
 						</div>
 					</a>
 				</li>
