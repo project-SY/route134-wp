@@ -3,11 +3,15 @@
 	<!-- content-column-->
 	<div class="content-column">
 		<div class="content-column-block clearfix">
+		    <?php query_posts('posts_per_page=2'); ?>
 			<?php if (have_posts()) : ?>
 			<?php while (have_posts()) : the_post(); ?>
 				<a href="<?php the_permalink(); ?>" class="headline-new-post left">
-					<img class="headline-thumbnail" src="<?php bloginfo('template_url'); ?>/images/pic-headline-thumbnail-01.png" height="180" width="360" alt="">
-					<h4>
+				<?php if (has_post_thumbnail()): ?>
+					<?php the_post_thumbnail(array(180, 360), array( 'class' => 'headline-thumbnail')); ?>
+					<?php else: ?>
+					<?php endif; ?>
+    				<h4>
 						<?php the_title(); ?>
 					</h4>
 					<p>
@@ -56,7 +60,7 @@
 </div>
 <div class="instragram-area">
 	<div class="inner content-width clearfix">
-		<h4>湘南ライフをInstragramでシェア</h4>
+		<h4>Instagram の #Route134 の写真</h4>
 		<ul>
 			<li><a href="#"><img src="<?php bloginfo('template_url'); ?>/images/pic-instragram-01.png" alt=""></a></li>
 			<li><a href="#"><img src="<?php bloginfo('template_url'); ?>/images/pic-instragram-02.png" alt=""></a></li>
